@@ -123,6 +123,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="hS4-PC-KZB" id="v1Z-Hu-ycJ"/>
+                        <outlet property="titleTextField" destination="xU7-4F-cLX" id="KJg-yi-b5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kis-Xc-I5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="j6j-CW-ytR" userLabel="Exit" sceneMemberID="exit"/>
