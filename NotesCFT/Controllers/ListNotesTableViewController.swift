@@ -45,18 +45,23 @@ class ListNotesTableViewController: UITableViewController {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-            case "displayNote":
-                print("note cell tapped")
-
-            case "addNote":
-                print("create note bar button item tapped")
-
-            default:
-                print("unexpected segue identifier")
-            }
+        case "displayNote":
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            
+            let note = notes[indexPath.row]
+            
+            let destination = segue.destination as! DisplayNoteViewController
+            
+            destination.note = note
+            
+        case "addNote":
+            print("create note bar button item tapped")
+            
+        default:
+            print("unexpected segue identifier")
+        }
     }
     
     @IBAction func unwindWithSegue(_ segue: UIStoryboardSegue) {
-
     }
 }
