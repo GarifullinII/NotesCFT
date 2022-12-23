@@ -15,6 +15,7 @@
 		6EC1B6EE2955BD2700AED0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EC1B6EC2955BD2700AED0E2 /* LaunchScreen.storyboard */; };
 		6EC1B6FB2955C3C300AED0E2 /* ListNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B6FA2955C3C300AED0E2 /* ListNotesTableViewController.swift */; };
 		6EC1B6FD2955E3FF00AED0E2 /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B6FC2955E3FF00AED0E2 /* ListNotesTableViewCell.swift */; };
+		6EC1B6FF2955F4C200AED0E2 /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B6FE2955F4C200AED0E2 /* DisplayNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6EC1B6EF2955BD2700AED0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EC1B6FA2955C3C300AED0E2 /* ListNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewController.swift; sourceTree = "<group>"; };
 		6EC1B6FC2955E3FF00AED0E2 /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
+		6EC1B6FE2955F4C200AED0E2 /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				6EC1B6FA2955C3C300AED0E2 /* ListNotesTableViewController.swift */,
+				6EC1B6FE2955F4C200AED0E2 /* DisplayNoteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				6EC1B6FD2955E3FF00AED0E2 /* ListNotesTableViewCell.swift in Sources */,
 				6EC1B6DF2955BD2400AED0E2 /* AppDelegate.swift in Sources */,
 				6EC1B6FB2955C3C300AED0E2 /* ListNotesTableViewController.swift in Sources */,
+				6EC1B6FF2955F4C200AED0E2 /* DisplayNoteViewController.swift in Sources */,
 				6EC1B6E12955BD2400AED0E2 /* SceneDelegate.swift in Sources */,
 				6EC1B6E92955BD2400AED0E2 /* NotesCFT.xcdatamodeld in Sources */,
 			);

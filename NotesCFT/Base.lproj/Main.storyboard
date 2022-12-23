@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,6 +70,45 @@
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="81.696428571428569"/>
         </scene>
+        <!--Display Note View Controller-->
+        <scene sceneID="Bh9-Ys-p30">
+            <objects>
+                <viewController id="DXa-Qk-C5C" customClass="DisplayNoteViewController" customModule="NotesCFT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4q-Zi-BSd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xU7-4F-cLX">
+                                <rect key="frame" x="15" y="54" width="384" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hS4-PC-KZB">
+                                <rect key="frame" x="15" y="98" width="384" height="779"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DjW-di-Ofc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DjW-di-Ofc" firstAttribute="trailing" secondItem="hS4-PC-KZB" secondAttribute="trailing" constant="15" id="FRP-kX-lNB"/>
+                            <constraint firstItem="xU7-4F-cLX" firstAttribute="leading" secondItem="DjW-di-Ofc" secondAttribute="leading" constant="15" id="Ux7-tG-2v0"/>
+                            <constraint firstItem="hS4-PC-KZB" firstAttribute="leading" secondItem="DjW-di-Ofc" secondAttribute="leading" constant="15" id="V50-T8-clr"/>
+                            <constraint firstItem="hS4-PC-KZB" firstAttribute="bottom" secondItem="DjW-di-Ofc" secondAttribute="bottom" constant="15" id="Z5p-r7-1ls"/>
+                            <constraint firstItem="hS4-PC-KZB" firstAttribute="top" secondItem="xU7-4F-cLX" secondAttribute="bottom" constant="10" id="aJx-Sk-Rb8"/>
+                            <constraint firstItem="xU7-4F-cLX" firstAttribute="top" secondItem="DjW-di-Ofc" secondAttribute="top" constant="10" id="ckZ-vr-os3"/>
+                            <constraint firstItem="DjW-di-Ofc" firstAttribute="trailing" secondItem="xU7-4F-cLX" secondAttribute="trailing" constant="15" id="oas-mZ-aIX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kis-Xc-I5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.95652173913049" y="81.696428571428569"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="NwF-UB-5QF">
             <objects>
@@ -92,6 +132,9 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
