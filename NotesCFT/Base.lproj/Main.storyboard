@@ -65,13 +65,19 @@
                             <outlet property="delegate" destination="b7s-rA-sxL" id="aQ8-x3-AIj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My notes" id="lme-rQ-JsJ"/>
+                    <navigationItem key="navigationItem" title="My notes" id="lme-rQ-JsJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ebc-22-Cgm">
+                            <connections>
+                                <segue destination="DXa-Qk-C5C" kind="show" identifier="addNote" id="43b-G3-GNt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPx-bA-2yN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="81.696428571428569"/>
         </scene>
-        <!--Display Note View Controller-->
+        <!--Title-->
         <scene sceneID="Bh9-Ys-p30">
             <objects>
                 <viewController id="DXa-Qk-C5C" customClass="DisplayNoteViewController" customModule="NotesCFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,9 +111,21 @@
                             <constraint firstItem="DjW-di-Ofc" firstAttribute="trailing" secondItem="xU7-4F-cLX" secondAttribute="trailing" constant="15" id="oas-mZ-aIX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QQU-Yx-k7w"/>
+                    <navigationItem key="navigationItem" title="Title" id="Fao-bB-Lin">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RfO-nl-ZJL">
+                            <connections>
+                                <segue destination="j6j-CW-ytR" kind="unwind" identifier="cancel" unwindAction="unwindWithSegue:" id="8Ab-OC-mar"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yHt-9W-Jzm">
+                            <connections>
+                                <segue destination="j6j-CW-ytR" kind="unwind" identifier="save" unwindAction="unwindWithSegue:" id="Xgf-C5-AIo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kis-Xc-I5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="j6j-CW-ytR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="986.95652173913049" y="81.696428571428569"/>
         </scene>
@@ -130,6 +148,9 @@
             <point key="canvasLocation" x="-817.39130434782612" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="43b-G3-GNt"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
