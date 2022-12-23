@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b7s-rA-sxL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MlQ-Vc-oi0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Notes Table View Controller-->
+        <!--My notes-->
         <scene sceneID="XQU-VN-mPt">
             <objects>
                 <tableViewController id="b7s-rA-sxL" customClass="ListNotesTableViewController" customModule="NotesCFT" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,10 +63,29 @@
                             <outlet property="delegate" destination="b7s-rA-sxL" id="aQ8-x3-AIj"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="My notes" id="lme-rQ-JsJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPx-bA-2yN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-817" y="82"/>
+            <point key="canvasLocation" x="92.753623188405811" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NwF-UB-5QF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MlQ-Vc-oi0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Qb-uJ-aBs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b7s-rA-sxL" kind="relationship" relationship="rootViewController" id="Pi1-IS-B1u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMC-Gq-PHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-817.39130434782612" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
