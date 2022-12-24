@@ -17,6 +17,7 @@
 		6EC1B6FD2955E3FF00AED0E2 /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B6FC2955E3FF00AED0E2 /* ListNotesTableViewCell.swift */; };
 		6EC1B6FF2955F4C200AED0E2 /* DisplayNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B6FE2955F4C200AED0E2 /* DisplayNoteViewController.swift */; };
 		6EC1B70329561F5400AED0E2 /* Date+convertToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B70229561F5400AED0E2 /* Date+convertToString.swift */; };
+		6EC1B70529577F4F00AED0E2 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1B70429577F4F00AED0E2 /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6EC1B6FC2955E3FF00AED0E2 /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesTableViewCell.swift; sourceTree = "<group>"; };
 		6EC1B6FE2955F4C200AED0E2 /* DisplayNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNoteViewController.swift; sourceTree = "<group>"; };
 		6EC1B70229561F5400AED0E2 /* Date+convertToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+convertToString.swift"; sourceTree = "<group>"; };
+		6EC1B70429577F4F00AED0E2 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		6EC1B6F52955C03300AED0E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6EC1B70429577F4F00AED0E2 /* CoreDataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			files = (
 				6EC1B6FD2955E3FF00AED0E2 /* ListNotesTableViewCell.swift in Sources */,
 				6EC1B70329561F5400AED0E2 /* Date+convertToString.swift in Sources */,
+				6EC1B70529577F4F00AED0E2 /* CoreDataHelper.swift in Sources */,
 				6EC1B6DF2955BD2400AED0E2 /* AppDelegate.swift in Sources */,
 				6EC1B6FB2955C3C300AED0E2 /* ListNotesTableViewController.swift in Sources */,
 				6EC1B6FF2955F4C200AED0E2 /* DisplayNoteViewController.swift in Sources */,
